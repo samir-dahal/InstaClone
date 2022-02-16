@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    x:Class="InstaClone.Views.HomeView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:fonts="clr-namespace:InstaClone.Fonts"
+    xmlns:views="clr-namespace:InstaClone.Views">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <StackLayout Padding="0,20">
+            <views:NavigationBarView Padding="20,0" />
+            <views:StoryListView Margin="0,15,0,0" />
+            <views:PostListView />
+        </StackLayout>
+    </ScrollView>
+</ContentView>

@@ -1,8 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="InstaClone.App">
+<Application
+    x:Class="InstaClone.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <Application.Resources>
-
+        <x:String x:Key="Material">Material</x:String>
+        <Color x:Key="PrimaryGray">#C9CCD1</Color>
+        <Color x:Key="BorderLine">#ECECEC</Color>
+        <Color x:Key="PrimaryBlue">#3578E5</Color>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+        <Style
+            x:Key="IconStyle"
+            TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource Material}" />
+            <Setter Property="FontSize" Value="27" />
+        </Style>
     </Application.Resources>
 </Application>

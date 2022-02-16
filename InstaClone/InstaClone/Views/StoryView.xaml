@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="InstaClone.Views.StoryView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:type="clr-namespace:InstaClone.Models"
+    x:DataType="type:StoryModel">
+    <ContentView.Content>
+        <Grid
+            Padding="20,0,0,0"
+            RowDefinitions="auto, auto">
+            <Frame
+                Padding="0"
+                CornerRadius="65"
+                HasShadow="False"
+                HeightRequest="65"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="65">
+                <Image
+                    Aspect="AspectFill"
+                    Source="{Binding Image}" />
+            </Frame>
+            <Ellipse
+                HeightRequest="78"
+                HorizontalOptions="Center"
+                StrokeThickness="2.5"
+                VerticalOptions="Center"
+                WidthRequest="78">
+                <Ellipse.Stroke>
+                    <LinearGradientBrush>
+                        <GradientStop Offset="0.1" Color="#D92F7D" />
+                        <GradientStop Offset="1.0" Color="#F16F40" />
+                    </LinearGradientBrush>
+                </Ellipse.Stroke>
+            </Ellipse>
+            <Label
+                Grid.Row="1"
+                Margin="0,-3,0,0"
+                FontSize="13"
+                HorizontalOptions="Center"
+                Text="{Binding UserName}" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>
